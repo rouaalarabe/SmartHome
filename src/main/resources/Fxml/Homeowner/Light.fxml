@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="510.0" prefWidth="600.0" styleClass="Dashboard_container" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthome3.controllers.Homeowner.HomeownerController">
+    <!-- Header Section -->
+    <Text fx:id="user_name" layoutX="32.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, Jane" textAlignment="CENTER">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Label fx:id="login_date" layoutX="164.0" layoutY="34.0" opacity="0.63" text="12:19 PM | Monday, 24th of October, 2024" />
+    <Text layoutX="549.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart Home" wrappingWidth="101.390625">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Text>
+
+    <!-- Light Status Cards -->
+    <VBox layoutX="32.0" layoutY="69.0" prefHeight="99.0" prefWidth="299.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Lights On">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Text fx:id="lightsOnCount" opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Text>
+    </VBox>
+
+    <VBox layoutX="378.0" layoutY="68.0" prefHeight="99.0" prefWidth="273.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Automation Status">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Text fx:id="automationStatus" opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="Enabled">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+    </VBox>
+
+    <VBox layoutX="32.0" layoutY="176.0" prefHeight="99.0" prefWidth="299.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Lights">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Text fx:id="totalLights" opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Text>
+    </VBox>
+
+    <!-- Brightness Control -->
+    <VBox layoutX="378.0" layoutY="175.0" prefHeight="102.0" prefWidth="273.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Brightness Control">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Slider fx:id="brightnessSlider" max="100" min="0" value="50" />
+        <Text fx:id="brightnessValue" opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="50%">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+    </VBox>
+
+    <!-- Light Usage Trends -->
+    <VBox layoutX="32.0" layoutY="310.0" prefHeight="248.0" prefWidth="619.0" styleClass="card">
+        <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Light Usage Trends">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <LineChart fx:id="lightUsageChart" title="Lights Usage Over Time">
+            <xAxis>
+                <CategoryAxis label="Time (Hours)" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Lights On" lowerBound="0" upperBound="20" />
+            </yAxis>
+        </LineChart>
+    </VBox>
+
+</AnchorPane>

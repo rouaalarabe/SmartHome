@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="702.0" prefWidth="748.0" styleClass="Dashboard_container" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthome3.controllers.Homeowner.DashboardController">
+   <VBox layoutX="1.0" layoutY="12.0" prefHeight="54.0" prefWidth="90.0" AnchorPane.bottomAnchor="684.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="831.3333333333334" AnchorPane.topAnchor="12.0" />
+   <VBox layoutX="5.0" layoutY="16.0" prefHeight="0.0" prefWidth="708.0" />
+   <VBox layoutX="137.0" layoutY="18.0" prefHeight="48.0" prefWidth="452.0" AnchorPane.bottomAnchor="684.0" AnchorPane.topAnchor="18.0" />
+   <VBox layoutX="618.0" layoutY="14.0" prefHeight="6.0" prefWidth="51.0" AnchorPane.bottomAnchor="682.0" AnchorPane.topAnchor="14.0" />
+   <VBox layoutX="64.0" layoutY="147.0" prefHeight="175.0" prefWidth="236.0" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="110.0">
+      <styleClass>
+         <String fx:value="card" />
+         <String fx:value="card_label" />
+         <String fx:value="card_title" />
+      </styleClass>
+      <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Light">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="Lighting Automation: Enabled">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </VBox>
+   <VBox layoutX="320.0" layoutY="243.0" prefHeight="175.0" prefWidth="197.0" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="110.0">
+      <styleClass>
+         <String fx:value="card" />
+         <String fx:value="card_label" />
+         <String fx:value="card_title" />
+      </styleClass>
+      <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text opacity="0.6" strokeType="OUTSIDE" strokeWidth="0.0" text="9°C | Auto Room Temperature ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Slider />
+   </VBox>
+   <VBox layoutX="64.0" layoutY="371.0" prefHeight="175.0" prefWidth="236.0" styleClass="card" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="310.0">
+      <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Motion ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="4 Connected Devices">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </VBox>
+   <VBox layoutX="320.0" layoutY="310.0" prefHeight="175.0" prefWidth="236.0" styleClass="card" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="310.0">
+      <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text opacity="0.55" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity: 45%">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </VBox>
+   <VBox layoutX="571.0" layoutY="165.0" prefHeight="375.0" prefWidth="138.0" AnchorPane.topAnchor="110.0">
+      <styleClass>
+         <String fx:value="quick_panel" />
+         <String fx:value="quick_panel_items" />
+         <String fx:value="quick_panel_title" />
+         <String fx:value="login_form_container" />
+      </styleClass>
+      <Text fill="#745230" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick Panel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#6b4f36" strokeType="OUTSIDE" strokeWidth="0.0" text="Light ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6b4f36" strokeType="OUTSIDE" strokeWidth="0.0" text="Motion ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6b4f36" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6b4f36" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </VBox>
+   <Label fx:id="login_date" layoutX="164.0" layoutY="34.0" opacity="0.63" text="12:19 PM | Monday, 24th of October, 2024" />
+   <Text fx:id="user_name" layoutX="64.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, Jane" textAlignment="CENTER" wrappingWidth="77.5283203125">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <Text layoutX="578.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart Home " wrappingWidth="130.75970458984375">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Text>
+</AnchorPane>
